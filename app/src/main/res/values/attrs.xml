@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HazyView">
+        <attr name="hazy_value_size" format="dimension" />
+        <attr name="hazy_value_color" format="color" />
+        <attr name="hazy_value_desc" format="string" />
+        <attr name="hazy_title_size" format="dimension" />
+        <attr name="hazy_title_color" format="color" />
+        <attr name="hazy_title_desc" format="string" />
+        <attr name="hazy_desc_size" format="dimension" />
+        <attr name="hazy_desc_color" format="color" />
+        <attr name="hazy_desc" format="string" />
+        <attr name="hazy_view_bg_color" format="color" />
+        <attr name="hazy_pb_bg_color" format="color" />
+        <attr name="hazy_pb_color" format="color" />
+        <attr name="hazy_pb_line_width" format="dimension" />
+        <attr name="hazy_view_breach_degree" format="integer" />
+    </declare-styleable>
+</resources>

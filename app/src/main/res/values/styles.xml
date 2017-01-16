@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="def_hazy_view_style">
+        <item name="hazy_value_size">55sp</item>
+        <item name="hazy_value_color">#253435</item>
+        <item name="hazy_title_size">15sp</item>
+        <item name="hazy_title_color">#A9AEAE</item>
+        <item name="hazy_desc_size">15sp</item>
+        <item name="hazy_desc_color">#FAD48A</item>
+        <item name="hazy_view_bg_color">@android:color/white</item>
+        <item name="hazy_pb_bg_color">@android:color/white</item>
+        <item name="hazy_pb_color">#FAD48A</item>
+        <item name="hazy_pb_line_width">3dp</item>
+        <item name="hazy_view_breach_degree">30</item>
+
+    </style>
+
+</resources>
