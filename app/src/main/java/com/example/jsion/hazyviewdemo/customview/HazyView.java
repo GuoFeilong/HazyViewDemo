@@ -17,6 +17,7 @@ import com.example.jsion.hazyviewdemo.R;
  */
 
 public class HazyView extends View {
+    private static final int DEF_MAX_HZ = 550;
     /**
      * 默认的角度间隔
      */
@@ -65,6 +66,7 @@ public class HazyView extends View {
     private Point hazyTitlePoint;
     private Point hazyDescPoint;
     private float percent;
+    private int maxHzV;
 
     private Paint hazyValuePaint;
     private Paint hazyTitlePaint;
@@ -169,7 +171,7 @@ public class HazyView extends View {
 
     private void initData() {
         contentPadding = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, DEF_CONTENT_PADDING, getContext().getResources().getDisplayMetrics());
-        percent = 65 / 100.F;
+        maxHzV = DEF_MAX_HZ;
     }
 
     @Override
@@ -213,6 +215,7 @@ public class HazyView extends View {
         drawHazyPbLine(canvas);
     }
 
+    // TODO: 2017/1/17 绘制最外层的阴影线
     private void drawHazyPbLine(Canvas canvas) {
 
     }
@@ -291,8 +294,12 @@ public class HazyView extends View {
      */
     public void setCurrentPercent(float percent) {
         this.percent = percent / 100.F;
+        hazyValueDesc = String.valueOf((int) (maxHzV * this.percent));
         invalidate();
     }
 
+    public void setHzValueMax(int maxV) {
+        this.maxHzV = maxV;
+    }
 
 }
